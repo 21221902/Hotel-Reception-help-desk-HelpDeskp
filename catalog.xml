@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/obaro/Desktop/Hotel_HelpDesk/src/hotel_helpdesk/hotel_schema.xsd" uri="xml-resources/jaxb/hoteldata/hotel_schema.xsd"/>
+    <system systemId="file:/C:/Users/obaro/Desktop/Hotel_HelpDesk/src/hotel_helpdesk/hotel_data.xsd" uri="xml-resources/jaxb/hoteldata/hotel_data.xsd"/>
+</catalog>

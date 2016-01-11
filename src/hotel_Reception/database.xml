@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hotel>
+    <name> Sea Side Hotel , Near cochin shipyard ford kochi, post code : 688530   </name>
+    <numberOfRooms>5</numberOfRooms>
+    <descriptions> Charankat Baiju Son's Hotel was established in 2000 by Krishnadas. </descriptions>
+    <BookingInfo>
+        <bookNo>0218</bookNo>
+        <customerID>cus00001</customerID>
+        <roomNumber>10</roomNumber>
+        <Descriptions>This room is be book amount three days ago</Descriptions>
+        <status>true</status>
+    </BookingInfo>
+    <BookingInfo>
+        <bookNo>1012</bookNo>
+        <customerID>cus00021</customerID>
+        <roomNumber>3</roomNumber>
+        <Descriptions>This booking information is no longer valid</Descriptions>
+        <status>true</status>
+    </BookingInfo>
+    <Room>
+        <roomNumber> 01 </roomNumber>
+        <type> double</type>
+        <amount>700</amount>
+        <status>true</status>
+        <Descriptions>Two double bed, with big suit and televisions ( Single day rent )</Descriptions>
+    </Room>
+    <Room>
+        <roomNumber> 02 </roomNumber>
+        <type> Single</type>
+        <amount>550</amount>
+        <status>true</status>
+        <Descriptions>One big suit and bathroom and a televisions ( Single day rent )</Descriptions>
+    </Room>
+    <Room>
+        <roomNumber> 03 </roomNumber>
+        <type> double</type>
+        <amount>1000</amount>
+        <status>true</status>
+        <Descriptions> VIP suit room, Dinner table, WIFI, Tv</Descriptions>
+    </Room>
+    <Room>
+        <roomNumber> 04 </roomNumber>
+        <type>dormitory room</type>
+        <amount>800</amount>
+        <status>true</status>
+        <Descriptions> Large rooms with 7 beds ( note : No extra facilities )</Descriptions>
+    </Room>
+</hotel>

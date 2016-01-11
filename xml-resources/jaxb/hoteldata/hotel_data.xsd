@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    <xs:element name="rate" type="RateInteger" />
+    <xs:element name="room" type="Room" />    
+    <xs:element name="bookingInfo" type="BookingInfo" />
+    <xs:element name="hotelInfo" type="HotelInfo" />
+    <xs:element name="supporter" type="Supporter" />
+    
+    
+    <xs:complexType name="Supporter">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />  
+             <xs:element name="positions" type="xs:string" /> 
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="RateInteger">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="20"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- The room entity-->
+    
+        <xs:complexType name="Room">
+            <xs:sequence> 
+                <xs:element name="roomNumber" type="xs:string" />
+                <xs:element name="type" type="xs:string" />             
+                <xs:element name="amount" type="RateInteger" />
+                <xs:element name="status" type="xs:boolean" />
+                <xs:element name="Descriptions" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>        
+  
+     <xs:complexType name="BookingInfo">
+            <xs:sequence> 
+                <xs:element name="bookNo" type="xs:string" />
+                <xs:element name="customerID" type="xs:string" />             
+                <xs:element name="roomNumber" type="RateInteger" />               
+                <xs:element name="Descriptions" type="xs:string" />
+                 <xs:element name="status" type="xs:boolean" />
+                   <xs:element name="bookingDate" type="xs:date" />
+            </xs:sequence>
+      </xs:complexType>        
+  
+   <xs:complexType name="HotelInfo">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/> 
+            <xs:element name="numberOfRooms" type="xs:integer"/> 
+            <xs:element name="descriptions" type="xs:string"/> 
+            <!--Hold object lists  -->
+              <xs:element maxOccurs="unbounded" name="BookingInfo" type="BookingInfo" />
+              <xs:element maxOccurs="unbounded" name="Room" type="Room" />
+              <xs:element maxOccurs="unbounded" name=" Supporter" type="Supporter" />             
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

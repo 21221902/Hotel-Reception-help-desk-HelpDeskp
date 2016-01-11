@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='Hotel_HelpDesk' version='1.0'>
+	<schema type='-xmlschema' package='xml_java_classes' name='hoteldata'>
+		<xjc-options>
+			<xjc-option name='-verbose' value='true'/>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='xml-resources/jaxb/hoteldata/hotel_data.xsd' origLocation='src/hotel_helpdesk/hotel_data.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>
